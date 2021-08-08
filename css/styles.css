@@ -1,10 +1,22 @@
-/** Generales **/
-body {
-    margin-bottom: 30px;
-}
-
 /** Fonts **/
 @import url('https://fonts.googleapis.com/css2?family=Italianno&family=Lato:wght@100;300;400;700;900&family=Raleway:wght@300;400;900&display=swap');
+
+/** Generales **/
+body {
+    background-color: #f8f8f8;
+    margin-bottom: 30px;
+}
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 2.4rem;
+    color: #000000;
+    line-height: 2.4rem;
+}
+h2 span {
+    font-size: 3.8rem;
+    font-family: 'Italianno', sans-serif;
+    color: #e082a8;
+}
 
 /** Sociales **/
 .sociales ul {
@@ -86,4 +98,11 @@ body {
     font-size: 2rem;
     font-weight: 900;
     color: #ffffff;
+}
+
+/****/
+.nuevo-sitio p {
+    font-family: 'Lato', sans-serif;
+    color: #979797;
+    font-size: 1.6rem;
 }
