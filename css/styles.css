@@ -2,8 +2,11 @@
 body {
     margin-bottom: 30px;
 }
-/** Sociales **/
 
+/** Fonts **/
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Lato:wght@100;300;400;700;900&family=Raleway:wght@300;400;900&display=swap');
+
+/** Sociales **/
 .sociales ul {
     list-style: none;
     margin:0;
@@ -45,7 +48,6 @@ body {
 }
 
 /**Navegacion**/
-
 .navegacion {
     background-color: #8ed3cc;
 } 
@@ -68,6 +70,7 @@ body {
 
 .nav-link {
     color: #e082a8;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.4rem;
     transition: all 0.4s ease-in-out;
 }
@@ -75,4 +78,12 @@ body {
 .nav-link:hover {
     background-color: #bde8dd;
     color: #000000;
+}
+
+/** Carousel **/
+.carousel-caption h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #ffffff;
 }
