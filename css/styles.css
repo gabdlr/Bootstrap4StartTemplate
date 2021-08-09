@@ -100,15 +100,14 @@ body {
     color: #ffffff;
 }
 
-/**Nuevo sitio**/
+/** Nuevo sitio **/
 .nuevo-sitio p {
     font-family: 'Lato', sans-serif;
     color: #979797;
     font-size: 1.6rem;
 }
 
-/**Servicios**/
-
+/** Servicios **/
 .imagen-servicio img{
     border: 6px solid #ffffff;
     -webkit-transition: transform 0.3s ease;
@@ -133,4 +132,37 @@ body {
     border-radius: 0;
     background-color: #e082a8;
     border: none;
+}
+
+/** Horarios **/
+.horario {
+    background-color: #8ed3cc;
+    color: #ffffff;
+}
+.horario h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 2.2rem;
+}
+.horario .table {
+    border: 2px solid #e082a8;
+}
+.horario .table thead {
+    background-color: #e082a8;
+}
+.horario .table td,
+.horario .table thead,
+.horario .table th {
+    border: none;
+}
+.horario .table tbody tr td {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    padding: .35rem;
+}
+.bg-horario {
+    background-image: url(../img/bg_horarios.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 400px;
 }
