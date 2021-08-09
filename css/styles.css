@@ -189,3 +189,39 @@ body {
     font-size: 1.6rem;
     color: #979797;
 }
+
+/** Citas **/
+.citas {
+    color: #ffffff;
+    background-image: url(../img/bg_citas.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: center center;
+}
+@media (min-width: 992px) {
+    .citas {
+        background-size: cover;
+    }
+}
+.citas h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 3.5rem;
+}
+.citas p {
+    font-size: 1.2rem;
+    line-height: 2.6rem;
+}
+.citas .btn-primary {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    background-color: #8ed3cc;
+    border: 0;
+    padding: 1rem 5rem;
+    border-radius: 0px;
+
+}
+/** Footer **/
+.copyright {
+    color: #979797;
+    font-size: .8rem;
+}
