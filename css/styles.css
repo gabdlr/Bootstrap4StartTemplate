@@ -166,3 +166,26 @@ body {
     background-size: cover;
     min-height: 400px;
 }
+
+/** Productos **/
+.productos .card{
+    border: none;
+}
+.productos .card a {
+    color: #000000;
+}
+.productos .card a:hover {
+    text-decoration: none;
+}
+.productos .card h3 {
+    color: #e082a8;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+}
+.productos .card p {
+    font-size: .8rem;
+}
+.productos .card .precio{
+    font-size: 1.6rem;
+    color: #979797;
+}
