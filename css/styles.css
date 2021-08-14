@@ -211,7 +211,7 @@ body {
     font-size: 1.2rem;
     line-height: 2.6rem;
 }
-.citas .btn-primary {
+.btn-primary {
     font-family: 'Lato', sans-serif;
     font-size: 1.2rem;
     background-color: #8ed3cc;
@@ -219,6 +219,9 @@ body {
     padding: 1rem 5rem;
     border-radius: 0px;
 
+}
+.btn-primary:hover {
+    background-color: #6ab4ad;
 }
 /** Footer **/
 .copyright {
@@ -300,4 +303,14 @@ aside {
         -moz-column-count: 4;
         column-count: 4;
     }
+}
+
+/** Contacto **/
+.formulario-contacto {
+    border: 2px solid #9a9a9a;
+    background-color: #ffffff;
+}
+
+.formulario-contacto textarea {
+    resize: none;
 }
