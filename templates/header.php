@@ -1,7 +1,6 @@
 <?php 
 //Definir un nombre para cachear
-$archivo = basename($_SERVER['PHP_SELF']);
-$pagina = str_replace(".php", "", $archivo);
+$pagina = basename($_SERVER['PHP_SELF'], ".php");
 //Definir archivo para cachear (puede ser .php tambien)
 //Cuando se utiliza un parametro hay que generar una pagina diferente en el cache para
 //cada uno (pagina producto.php)

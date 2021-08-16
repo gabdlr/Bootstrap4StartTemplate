@@ -30,7 +30,7 @@
       </div>
       <!--.col-md-4-->
       <hr class="w-100">
-      <p class="text-center copyright w-100">Carolina Spa & Salon 2021. Todos los derechos reservados.</p>
+      <p class="text-center copyright w-100">Carolina Spa & Salon <?php echo date('Y') ?>. Todos los derechos reservados.</p>
     </div>
     <!--.row-->
   </div>

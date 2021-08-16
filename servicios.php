@@ -40,7 +40,7 @@
                 <div class="card">
                     <div class="card-header" id="servicio2">
                         <h2 class="mb-0">
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#descripcion2" aria-expanded="false" aria-controls="#descripcion2">
+                            <button class="btn btn-link w-100 text-left" data-toggle="collapse" data-target="#descripcion2" aria-expanded="false" aria-controls="#descripcion2">
                                 Servicio 2
                             </button>
                         </h2>
@@ -61,7 +61,7 @@
                 <div class="card">
                     <div class="card-header" id="servicio3">
                         <h2 class="mb-0">
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#descripcion3" aria-expanded="false" aria-controls="#descripcion3">
+                            <button class="btn btn-link w-100 text-left" data-toggle="collapse" data-target="#descripcion3" aria-expanded="false" aria-controls="#descripcion3">
                                 Servicio 3
                             </button>
                         </h2>
