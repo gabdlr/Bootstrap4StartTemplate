@@ -1,19 +1,3 @@
-# Bootstrap 4 Start Template
-Kick Start your Bootstrap 4 Project with this lightweight template, it only loads the require bootstrap files plus a stylesheet and a javascript file for your custom code.
+Este sitio web forma parte de un curso realizado en Udemy "Diseño y Desarrollo Web con Bootstrap 4" por Juan Pablo De La Torre Valdez.
+This web site is related to a course I've taken at Udemy "Diseño y Desarrollo Web con Bootstrap 4" imparted by Juan Pablo De La Torre Valdez.
 
-## Instructions
-
-- Download this project
-- Decompress
-- Change directory name
-- Build Something great
-
-# Template Bootstrap 4
-Inicia tu proyecto con este template ligero, solo viene con los archivos necesarios, así como una hoja de estilos y una archivo javascript para tu código.
-
-## Instrucciones
-
-- Descarga este proyecto
-- Descomprime
-- Cambia el nombre del proyecto
-- Crea algo increible!
