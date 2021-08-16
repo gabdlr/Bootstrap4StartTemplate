@@ -8,6 +8,10 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <script src="https://kit.fontawesome.com/24fcc6f258.js" crossorigin="anonymous"></script>
+  <title>Carolina Spa</title>
+  <?php $pagina_actual = basename($_SERVER["PHP_SELF"]);
+   $pagina_actual = str_replace(".php", "", $pagina_actual); 
+  ?> 
 </head>
 
 <body>
@@ -42,11 +46,11 @@
       <div class="container">
         <div class="collapse navbar-collapse " id="nav_principal">
           <ul class="nav nav-justified w-100 flex-column flex-md-row">
-            <li class="nav-item"><a href="index.php" class="nav-link">Inicio</a></li>
-            <li class="nav-item"><a href="nosotros.php" class="nav-link">Nosotros</a></li>
-            <li class="nav-item"><a href="servicios.php" class="nav-link">Servicios</a></li>
-            <li class="nav-item"><a href="productos.php" class="nav-link">Productos</a></li>
-            <li class="nav-item"><a href="contacto.php" class="nav-link">Contacto</a></li>
+            <li class="nav-item mt-2 mt-md-0"><a href="index.php" class="nav-link <?php echo $pagina_actual === "index" ? "active" : "" ?>">Inicio</a></li>
+            <li class="nav-item"><a href="nosotros.php" class="nav-link <?php echo $pagina_actual === "nosotros" ? "active" : "" ?>">Nosotros</a></li>
+            <li class="nav-item"><a href="servicios.php" class="nav-link <?php echo $pagina_actual === "servicios" ? "active" : "" ?>">Servicios</a></li>
+            <li class="nav-item"><a href="productos.php" class="nav-link <?php echo $pagina_actual === "productos" ? "active" : "" ?>">Productos</a></li>
+            <li class="nav-item"><a href="contacto.php" class="nav-link <?php echo $pagina_actual === "contacto" ? "active" : "" ?>">Contacto</a></li>
           </ul>
         </div>
       </div>

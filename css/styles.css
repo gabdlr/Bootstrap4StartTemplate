@@ -81,7 +81,7 @@ body {
 }
 
 .nav-link {
-    color: #e082a8;
+    color: #ffffff;
     font-family: 'Raleway', sans-serif;
     font-size: 1.4rem;
     transition: all 0.4s ease-in-out;
@@ -91,7 +91,10 @@ body {
     background-color: #bde8dd;
     color: #000000;
 }
-
+.nav-link.active {
+    background-color:#e082a8 ;
+    border-radius: 10px;
+}
 /** Carousel **/
 .carousel-caption h3{
     font-family: 'Raleway', sans-serif;
@@ -132,6 +135,9 @@ body {
     border-radius: 0;
     background-color: #e082a8;
     border: none;
+}
+.servicio-info .btn-primary:hover {
+    background-color: #c27191;
 }
 
 /** Horarios **/
@@ -220,7 +226,7 @@ body {
     border-radius: 0px;
 
 }
-.btn-primary:hover {
+.formulario-contacto .btn-primary:hover {
     background-color: #6ab4ad;
 }
 /** Footer **/
