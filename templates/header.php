@@ -1,3 +1,27 @@
+<?php 
+//Definir un nombre para cachear
+$archivo = basename($_SERVER['PHP_SELF']);
+$pagina = str_replace(".php", "", $archivo);
+//Definir archivo para cachear (puede ser .php tambien)
+//Cuando se utiliza un parametro hay que generar una pagina diferente en el cache para
+//cada uno (pagina producto.php)
+if (isset($_GET["id"])){
+  $archivoCache = 'cache/'.$pagina."-".$_GET["id"].'.html';
+} else {
+  $archivoCache = 'cache/'.$pagina.'.html';
+
+}
+
+//Cuanto tiempo debera estar este archivo almacenado
+$tiempo = 36000;
+//Chequear que el archivo exista, el tiempo sea el adecuado y mostrarlo
+if (file_exists($archivoCache) && time() - $tiempo < filemtime($archivoCache)) {
+    include($archivoCache);
+    exit;
+}
+//Si el archivo no existe, o el tiempo de cacheo ya se vencio, se genera uno nuevo
+ob_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,9 +33,6 @@
   <link rel="stylesheet" href="css/styles.css">
   <script src="https://kit.fontawesome.com/24fcc6f258.js" crossorigin="anonymous"></script>
   <title>Carolina Spa</title>
-  <?php $pagina_actual = basename($_SERVER["PHP_SELF"]);
-   $pagina_actual = str_replace(".php", "", $pagina_actual); 
-  ?> 
 </head>
 
 <body>
@@ -46,11 +67,11 @@
       <div class="container">
         <div class="collapse navbar-collapse " id="nav_principal">
           <ul class="nav nav-justified w-100 flex-column flex-md-row">
-            <li class="nav-item mt-2 mt-md-0"><a href="index.php" class="nav-link <?php echo $pagina_actual === "index" ? "active" : "" ?>">Inicio</a></li>
-            <li class="nav-item"><a href="nosotros.php" class="nav-link <?php echo $pagina_actual === "nosotros" ? "active" : "" ?>">Nosotros</a></li>
-            <li class="nav-item"><a href="servicios.php" class="nav-link <?php echo $pagina_actual === "servicios" ? "active" : "" ?>">Servicios</a></li>
-            <li class="nav-item"><a href="productos.php" class="nav-link <?php echo $pagina_actual === "productos" ? "active" : "" ?>">Productos</a></li>
-            <li class="nav-item"><a href="contacto.php" class="nav-link <?php echo $pagina_actual === "contacto" ? "active" : "" ?>">Contacto</a></li>
+            <li class="nav-item mt-2 mt-md-0"><a href="index.php" class="nav-link <?php echo $pagina === "index" ? "active" : "" ?>">Inicio</a></li>
+            <li class="nav-item"><a href="nosotros.php" class="nav-link <?php echo $pagina === "nosotros" ? "active" : "" ?>">Nosotros</a></li>
+            <li class="nav-item"><a href="servicios.php" class="nav-link <?php echo $pagina === "servicios" ? "active" : "" ?>">Servicios</a></li>
+            <li class="nav-item"><a href="productos.php" class="nav-link <?php echo $pagina === "productos" || $pagina === "producto" ? "active" : "" ?>">Productos</a></li>
+            <li class="nav-item"><a href="contacto.php" class="nav-link <?php echo $pagina === "contacto" ? "active" : "" ?>">Contacto</a></li>
           </ul>
         </div>
       </div>

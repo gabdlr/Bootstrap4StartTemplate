@@ -24,7 +24,7 @@
                 <label for="email">E-mail:</label>
                 <input type="email" class="form-control" id="email" placeholder="Tu e-mail" required>
                 <div class="invalid-feedback">El email es obligatorio</div>
-                <div class="valid-feedback">Dirección de correo válidad</div>
+                <div class="valid-feedback">Dirección de correo válida</div>
               </div>
               <div class="form-group">
                 <label for="mensaje">Mensaje:</label>
